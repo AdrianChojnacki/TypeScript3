@@ -12,7 +12,7 @@ const exampleObject = {
 
 exampleObject.ADD_USER = 'REMOVE_USER';
 
-Example.ADD_USER = 'coś';
+Example.ADD_USER = 'REMOVE_USER';
 
 const test = exampleObject.ADD_USER;
 
