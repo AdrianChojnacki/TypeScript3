@@ -2,10 +2,18 @@ enum Example {
   USER,
   MODERATOR,
   ADMIN,
+  GOD = 12,
+  TEST,
 }
 
-const user = {
-  type: 0,
+type UserTypes = 0 | 1 | 2;
+
+interface User {
+  type: UserTypes;
+}
+
+const user: User = {
+  type: 4,
 };
 
 if (user.type === Example.USER) {
