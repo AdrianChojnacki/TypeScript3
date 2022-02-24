@@ -1,25 +1,9 @@
 enum Example {
-  USER,
-  MODERATOR,
-  ADMIN,
-  GOD = 12,
-  TEST,
+  ADD_USER = 'ADD_USER',
+  EDIT_USER = 'EDIT_USER',
+  REMOVE_USER = 'REMOVE_USER',
 }
 
-type UserTypes = 0 | 1 | 2;
+const test = Example.ADD_USER;
 
-interface User {
-  type: UserTypes;
-}
-
-const user: User = {
-  type: 4,
-};
-
-if (user.type === Example.USER) {
-  console.log('Użytkownik');
-} else if (user.type === Example.MODERATOR) {
-  console.log('Moderator');
-} else if (user.type === Example.ADMIN) {
-  console.log('Admin');
-}
+console.log(test);
